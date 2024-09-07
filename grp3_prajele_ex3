@@ -1,22 +1,22 @@
-# 1. Program to calculate the length of a string
+# 1. Calculate the length of a string
 def calculate_length():
     string = input("Enter a string: ")
     print("Length of the string:", len(string))
 
-# 2. Program to count the number of characters in a string
+# 2. Count the number of characters in a string
 def count_characters():
     string = input("Enter a string: ")
     character_count = len(string)
     print("Number of characters in the string:", character_count)
 
-# 3. Program to get a string where all occurrences of its first char have been changed to '$', except the first char itself
+# 3. Replace all occurrences of first character in a string (except the first occurrence) with '$'
 def replace_first_char():
     string = input("Enter a string: ")
     first_char = string[0]
     modified_string = first_char + string[1:].replace(first_char, '$')
     print("Modified string:", modified_string)
 
-# 4. Program to get a single string from two given strings, swap first two characters of each, and separate by a space
+# 4. Swap the first two characters of two given strings and concatenate them with a space
 def swap_first_two_chars():
     string1 = input("Enter first string: ")
     string2 = input("Enter second string: ")
@@ -27,7 +27,7 @@ def swap_first_two_chars():
     concatenated_string = new_string1 + " " + new_string2
     print("Concatenated string after swapping:", concatenated_string)
 
-# 5. Using + Concatenate Strings in Python using 4 variables and concatenate them with spaces
+# 5. Concatenate 4 predefined variables with spaces
 def concatenate_four_variables():
     str1 = "Hello"
     str2 = "this"
@@ -37,7 +37,7 @@ def concatenate_four_variables():
     concatenated_string = str1 + " " + str2 + " " + str3 + " " + str4
     print("Concatenated string:", concatenated_string)
 
-# 6. Using + Concatenate Strings in Python get two strings from user input and concatenate them
+# 6. Concatenate two strings from user input
 def concatenate_two_inputs():
     str1 = input("Enter first string: ")
     str2 = input("Enter second string: ")
@@ -45,7 +45,7 @@ def concatenate_two_inputs():
     concatenated_string = str1 + " " + str2
     print("Concatenated string:", concatenated_string)
 
-# 7. Using + Concatenate in Python using your name and your age in a paragraph
+# 7. Concatenate name and age in a paragraph
 def concatenate_name_age():
     name = "Hersly"
     age = 21
@@ -53,11 +53,11 @@ def concatenate_name_age():
     paragraph = "My name is " + name + " and I am " + str(age) + " years old."
     print(paragraph)
 
-# Function calls to run the programs
+# Function calls
 calculate_length()
 count_characters()
 replace_first_char()
 swap_first_two_chars()
 concatenate_four_variables()
 concatenate_two_inputs()
-concatenate_name
+concatenate_name_age()
